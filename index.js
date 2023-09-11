@@ -9,7 +9,7 @@ function calculateBMI() {
 
   // You are going to write the code here before the curly braces 👇🏻
 
-  let BMI = weight/($meter^2);
+  let BMI = weight/((height^2)/100);
   let result = BMI;
   let final_result;
 
@@ -17,19 +17,19 @@ function calculateBMI() {
     let state = "underweight";
   }
 
-  if (BMI < 24.9){
+  else if (BMI < 24.9){
     let state = "healthy weight";
   }  
 
-  if (BMI < 29.9){
+  else if (BMI < 29.9){
     let state = "overweight";
   }
 
-  if (BMI <= 30.0){
+  else {
     let state = "obese";
   }
 
-  console.log(state);
+  console.log("your state is: " + state);
 
 
   if (19 < age || age < 24){
@@ -41,7 +41,7 @@ function calculateBMI() {
     }
   }
 
-  if (25 < age || age < 34){
+  else if (25 < age || age < 34){
     if (20 < BMI || BMI < 25){
       final_result = "healthy";
     }
@@ -50,7 +50,7 @@ function calculateBMI() {
     }
   }
 
-  if (35 < age || age < 44){
+  else if (35 < age || age < 44){
     if (21 < BMI || BMI < 26){
       final_result = "healthy";
     }
@@ -59,7 +59,7 @@ function calculateBMI() {
     }
   }
 
-  if (45 < age || age < 54){
+ else if (45 < age || age < 54){
     if (22 < BMI || BMI < 27){
       final_result = "healthy";
     }
@@ -68,7 +68,7 @@ function calculateBMI() {
     }
   }
 
-  if (55 < age || age < 64){
+  else if (55 < age || age < 64){
     if (23 < BMI || BMI < 28){
       final_result = "healthy";
     }
@@ -77,7 +77,7 @@ function calculateBMI() {
     }
   }
 
-  if (age > 65){
+  else (age > 65){
     if (24 < BMI || BMI < 29){
       final_result = "healthy";
     }
@@ -86,5 +86,5 @@ function calculateBMI() {
     }
   }
   
-  console.log (final_state);
+  console.log ("your final state based on your age is: " + final_state);
 }
