@@ -9,7 +9,6 @@ function calculateBMI() {
 
   // You are going to write the code here before the curly braces 👇🏻
 
-  $meter = $cm / 100;
   let BMI = weight/($meter^2);
   let result = BMI;
   let final_result;
@@ -33,8 +32,8 @@ function calculateBMI() {
   console.log(state);
 
 
-  if (19 < age < 24){
-    if (19 < BMI < 24){
+  if (19 < age || age < 24){
+    if (19 < BMI || BMI < 24){
       final_result = "healthy";
     }
     else{
@@ -42,8 +41,8 @@ function calculateBMI() {
     }
   }
 
-  if (25 < age < 34){
-    if (20 < BMI < 25){
+  if (25 < age || age < 34){
+    if (20 < BMI || BMI < 25){
       final_result = "healthy";
     }
     else{
@@ -51,8 +50,8 @@ function calculateBMI() {
     }
   }
 
-  if (35 < age < 44){
-    if (21 < BMI < 26){
+  if (35 < age || age < 44){
+    if (21 < BMI || BMI < 26){
       final_result = "healthy";
     }
     else{
@@ -60,8 +59,8 @@ function calculateBMI() {
     }
   }
 
-  if (45 < age < 54){
-    if (22 < BMI < 27){
+  if (45 < age || age < 54){
+    if (22 < BMI || BMI < 27){
       final_result = "healthy";
     }
     else{
@@ -69,8 +68,8 @@ function calculateBMI() {
     }
   }
 
-  if (55 < age < 64){
-    if (23 < BMI < 28){
+  if (55 < age || age < 64){
+    if (23 < BMI || BMI < 28){
       final_result = "healthy";
     }
     else{
@@ -79,7 +78,7 @@ function calculateBMI() {
   }
 
   if (age > 65){
-    if (24 < BMI < 29){
+    if (24 < BMI || BMI < 29){
       final_result = "healthy";
     }
     else{
