@@ -77,7 +77,7 @@ function calculateBMI() {
     }
   }
 
-  else (age > 65){
+  else { (age > 65)
     if (24 < BMI || BMI < 29){
       final_result = "healthy";
     }
