@@ -9,7 +9,8 @@ function calculateBMI() {
 
   // You are going to write the code here before the curly braces 👇🏻
 
-  let BMI = weight/(hight^2);
+  $meter = $cm / 100;
+  let BMI = weight/($meter^2);
   let result = BMI;
   let final_result;
 
