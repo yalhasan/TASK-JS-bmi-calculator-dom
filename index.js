@@ -9,82 +9,79 @@ function calculateBMI() {
 
   // You are going to write the code here before the curly braces 👇🏻
 
-  let BMI = weight/((height^2)/100);
+  let BMI = weight/((height/100)**2);
   let result = BMI;
   let final_result;
 
   if (BMI < 18.5){
-    let state = "underweight";
+    alert ("you are underweight");
   }
 
-  else if (BMI < 24.9){
-    let state = "healthy weight";
+  else if (BMI <= 24.9){
+    alert("you have a healthy weight");
   }  
 
-  else if (BMI < 29.9){
-    let state = "overweight";
+  else if (BMI <= 29.9){
+    alert("you are overweight");
   }
 
   else {
-    let state = "obese";
+    alert("you are obese!");
   }
 
-  console.log("your state is: " + state);
 
-
-  if (19 < age || age < 24){
-    if (19 < BMI || BMI < 24){
-      final_result = "healthy";
+  if (19 <= age && age <= 24){
+    if (19 <= BMI && BMI <= 24.9){
+      alert("you are healthy");
     }
     else{
-      final_result = "not healthy";
+      alert("you are not healthy");
     }
   }
 
-  else if (25 < age || age < 34){
-    if (20 < BMI || BMI < 25){
-      final_result = "healthy";
+  else if (25 <= age && age <= 34){
+    if (20 <= BMI && BMI <= 25){
+      alert("you are healthy");
     }
     else{
-      final_result = "not healthy";
+      alert("you are not healthy");
     }
   }
 
-  else if (35 < age || age < 44){
-    if (21 < BMI || BMI < 26){
-      final_result = "healthy";
+  else if (35 <= age && age <= 44){
+    if (21 <= BMI && BMI <= 26){
+      alert("you are healthy");
     }
     else{
-      final_result = "not healthy";
+      alert("you are not healthy");
     }
   }
 
- else if (45 < age || age < 54){
-    if (22 < BMI || BMI < 27){
-      final_result = "healthy";
+ else if (45 <= age && age <= 54){
+    if (22 <= BMI && BMI <= 27){
+      alert("you are healthy");
     }
     else{
-      final_result = "not healthy";
+      alert("you are not healthy");
     }
   }
 
-  else if (55 < age || age < 64){
-    if (23 < BMI || BMI < 28){
-      final_result = "healthy";
+  else if (55 <= age && age <= 64){
+    if (23 <= BMI && BMI <= 28){
+      alert("you are healthy");
     }
     else{
-      final_result = "not healthy";
+      alert("you are not healthy");
     }
   }
 
-  else { (age > 65)
-    if (24 < BMI || BMI < 29){
-      final_result = "healthy";
+  else if(age > 65){
+    if (24 <= BMI && BMI <= 29){
+      alert("you are healthy");
     }
     else{
-      final_result = "not healthy";
+      alert("you are not healthy");
     }
   }
-  
-  console.log ("your final state based on your age is: " + final_state);
+
 }
